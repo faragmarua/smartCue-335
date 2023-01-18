@@ -3,6 +3,7 @@
     <string name="app_title">Willkommen bei Smartcue!</string>
     <string name="addCard">Karteikarte hinzufügen</string>
     <string name="getCards">Karteikarten ansehen</string>
+    <string name="addCard_title">Neue Karteikarten erstellen</string>
     <string name="title_activity_add_card">AddCard</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

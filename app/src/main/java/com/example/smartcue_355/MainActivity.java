@@ -14,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.ic_icon_sc);
+        getSupportActionBar().setLogo(R.drawable.ic_icon_sc);
+
 
         switchToSecondActivity = findViewById(R.id.addCard);
         switchToSecondActivity.setOnClickListener(new View.OnClickListener() {
@@ -24,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //Kommunikation mit Activity 2
     private void switchActivities() {
         Intent switchActivityIntent = new Intent(this, MainActivity2.class);
         startActivity(switchActivityIntent);
