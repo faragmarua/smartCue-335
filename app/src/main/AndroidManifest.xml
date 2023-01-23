@@ -8,10 +8,22 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher_smartue"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_smartue_round"
+        android:roundIcon="@drawable/ic_icon_sc"
         android:supportsRtl="true"
         android:theme="@style/Theme.Smartcue355"
         tools:targetApi="31">
+        <receiver
+            android:name=".NewAppWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
         <activity
             android:name=".MainActivity2"
             android:exported="false">
